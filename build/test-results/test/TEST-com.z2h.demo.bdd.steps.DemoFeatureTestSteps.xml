@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.z2h.demo.bdd.steps.DemoFeatureTestSteps" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-04-26T03:49:52" hostname="macC02T86YBH03Q" time="0.0">
+  <properties/>
+  <testcase name="initializationError" classname="com.z2h.demo.bdd.steps.DemoFeatureTestSteps" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

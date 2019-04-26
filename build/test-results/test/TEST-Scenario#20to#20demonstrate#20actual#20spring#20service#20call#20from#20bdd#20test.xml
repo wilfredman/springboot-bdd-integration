@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario to demonstrate actual spring service call from bdd test" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-26T03:49:54" hostname="macC02T86YBH03Q" time="10.383">
+  <properties/>
+  <testcase name="Verify status after service call" classname="Scenario to demonstrate actual spring service call from bdd test" time="10.383"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.3.RELEASE)
+
+23:50:03.803 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - Starting DemoFeatureTestSteps on macC02T86YBH03Q with PID 9572 (started by manwilf in /Users/manwilf/Projects/tdd/springboot-bdd-integration)
+23:50:03.805 [Test worker] DEBUG c.z.d.bdd.steps.DemoFeatureTestSteps - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+23:50:03.805 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - The following profiles are active: test
+23:50:04.015 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3df825bc: startup date [Thu Apr 25 23:50:04 EDT 2019]; root of context hierarchy
+23:50:04.536 [Test worker] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:50:04.723 [Test worker] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.annotation.AnnotationConfigApplicationContext@3df825bc: startup date [Thu Apr 25 23:50:04 EDT 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+23:50:04.728 [Test worker] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+23:50:04.827 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - Started DemoFeatureTestSteps in 9.887 seconds (JVM running for 12.9)
+23:50:04.831 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - ++ GIVEN -> some_service_exists()
+    ?[32mGiven ?[0m?[32msome service exists?[0m                ?[90m# DemoFeatureTestSteps.some_service_exists()?[0m
+23:50:04.835 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - ++ AND -> setup_test_data()
+23:50:04.835 [Test worker] INFO  c.z.d.b.s.helper.BddDatabaseHelper - ++ cleaning any stale data and setup fresh demo test data
+    ?[32mAnd ?[0m?[32msetup clean & fresh test data?[0m        ?[90m# DemoFeatureTestSteps.setup_test_data()?[0m
+23:50:04.837 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - ++ WHEN -> the_client_calls_service()
+    ?[32mWhen ?[0m?[32mthe client calls service?[0m            ?[90m# DemoFeatureTestSteps.the_client_calls_service()?[0m
+23:50:04.838 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - ++ THEN -> verify_expected_result()
+23:50:04.838 [Test worker] INFO  com.z2h.demo.service.UserServiceImpl - inside UserServiceImpl > printUserName() > HELLO Manu
+23:50:04.838 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - Service invoked.
+23:50:04.838 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - -- verify_expected_result()
+    ?[32mThen ?[0m?[32mverify expected result?[0m              ?[90m# DemoFeatureTestSteps.verify_expected_result()?[0m
+23:50:04.839 [Test worker] INFO  c.z.d.bdd.steps.DemoFeatureTestSteps - ++ AND -> cleanup_demo_test_data()
+23:50:04.839 [Test worker] INFO  c.z.d.b.s.helper.BddDatabaseHelper - ++ cleaning any stale data and setup fresh demo test data
+    ?[32mThen ?[0m?[32mcleanup demo test data?[0m              ?[90m# DemoFeatureTestSteps.cleanup_demo_test_data()?[0m
+]]></system-out>
+  <system-err><![CDATA[Apr 25, 2019 11:49:54 PM org.springframework.test.context.support.AbstractContextLoader generateDefaultLocations
+INFO: Could not detect default resource locations for test class [com.z2h.demo.bdd.BaseIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Apr 25, 2019 11:49:54 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Apr 25, 2019 11:49:54 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3aa29642, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@496a86ed, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@385f4ae4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6838819a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@46060a59, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bc6a19a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@198cc86c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3594ae96, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@43363ebf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2d929d32, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5222ef44]
+]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.z2h.demo.BddDemoAppStartupIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-26T03:49:52" hostname="macC02T86YBH03Q" time="0.008">
+  <properties/>
+  <testcase name="contextLoads" classname="com.z2h.demo.BddDemoAppStartupIntegrationTest" time="0.008"/>
+  <system-out><![CDATA[23:49:52.580 [Test worker] INFO com.z2h.demo.BddDemoAppStartupIntegrationTest - Verifying graceful loading of spring context.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
