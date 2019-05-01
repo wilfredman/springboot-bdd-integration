@@ -3,6 +3,9 @@ buildscript {
     
     /* Artifactory/maven repo to fetch build script (plugin) dependencies only. */
     repositories {
+        maven {
+            url "https://artifactory.platform.manulife.io/artifactory/libs-release"
+        }
         jcenter()
         mavenCentral()
         
@@ -65,6 +68,10 @@ jar {
 
 dependencies {
 
+    compile 'commons-io:commons-io:2.6'
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile 'junit:junit:4.12'
+    
     implementation libs.springBootStarterJdbc
 
     testImplementation libs.test.springBootStarterTest,
@@ -73,5 +80,9 @@ dependencies {
             libs.test.serenityJunit,
             libs.test.serenityCucumber
 
+    testCompile 'commons-io:commons-io:2.6'
+    testCompile 'org.slf4j:slf4j-api:1.7.21'
+    testCompile 'junit:junit:4.12'
+    
     testRuntimeOnly libs.test.serenitySpring
 }

@@ -7,4 +7,3 @@ Feature: Scenario to demonstrate actual spring service call from bdd test
     When the client calls service
     Then verify expected result
     Then cleanup demo test data
-
