@@ -69,9 +69,9 @@ jar {
 dependencies {
 
     compile 'commons-io:commons-io:2.6'
-    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
     compile 'junit:junit:4.12'
-    
+
     implementation libs.springBootStarterJdbc
 
     testImplementation libs.test.springBootStarterTest,
@@ -83,6 +83,9 @@ dependencies {
     testCompile 'commons-io:commons-io:2.6'
     testCompile 'org.slf4j:slf4j-api:1.7.21'
     testCompile 'junit:junit:4.12'
-    
+    testCompile group: 'org.slf4j', name: 'integration', version: '1.7.26'
+
     testRuntimeOnly libs.test.serenitySpring
+    testRuntimeOnly 'org.slf4j:slf4j-api:1.7.21'
+
 }
